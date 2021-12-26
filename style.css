@@ -1,0 +1,349 @@
+* {
+  margin: 0;
+  padding: o;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+  background-image: url(img/bgb.jpg);
+  max-width: 100%;
+  overflow-x: hidden;
+}
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #99A799;
+  z-index: 5;
+}
+
+nav .title {
+  font-family: "Lobster", cursive;
+  font-size: 30px;
+  margin: 5px 0px;
+  color: white;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 15px 0px;
+}
+.navbar ul li {
+  font-family: "avenir next";
+  font-size: 20px;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 25px;
+}
+.navbar ul li a:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 10px white;
+}
+/* akhir navbar */
+/* home */
+.home {
+  margin-top: 200px;
+  height: 35vh;
+}
+.home h1 {
+  padding-left: 150px;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: #ff9999;
+}
+
+.home p {
+  color: #ff9999;
+  margin-bottom: 50px;
+  font-size: 24px;
+  padding-left: 150px;
+}
+.home img {
+  border-radius: 10px;
+  margin-top: -350px;
+  float: right;
+  margin-right: 60px;
+}
+/* akhir home */
+/* profile */
+.profile {
+  width: 100%;
+  height: 280px;
+  padding: 160px 0px;
+  margin-top: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+.profile img {
+  border-radius: 50%;
+  margin-left: 100px;
+  height: 200px;
+  width: 200px;
+}
+
+.profile-text {
+  width: 560px;
+  margin-left: 150px;
+  margin-top: -10px;
+}
+
+.profile-text h1{
+  color: black;
+  font-weight: 600;
+  font-size: 36px;
+  margin-top: 10px;
+  margin-bottom: 12px;
+  font-family: georgia;
+}
+.profile-text p {
+  font-size: 20px;
+  line-height: 30px;
+}
+.profile ul li {
+  list-style: none;
+  float: left;
+  display: flex;
+  font-size: 30px;
+  color: black;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+/* akhir profile */
+/* hobby */
+.hobby {
+  padding: 160px 0px;
+  width: 100%;
+  height: 250px;
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+ 
+}
+.hobby img {
+  height: auto;
+  width: 260px;
+  border-radius: 10%;
+  transition: 1s;
+}
+.hobby img:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+.hobby-text {
+  width: 560px;
+  padding-left: 150px;
+  margin-left: -200px;
+}
+.hobby-text h1 {
+  color: black;
+  font-weight: 600;
+  font-size: 36px;
+  font-family: georgia;
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+.hobby-text p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+/* akhir hobby */
+/* education */
+.education {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 50vh;
+  margin:50px ;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  padding-right: 38px;
+}
+.education h1{
+  text-align: center;
+  font-weight: 600;
+  font-size: 36px;
+  font-family: georgia;
+  padding-top: 40px;
+  
+} 
+.card{
+  background-color:lightgrey ;
+  width: 260px;
+  padding: 20px;
+  margin: 30px;
+  justify-self: start;
+  margin-top: 40px;
+  
+}
+ .card:hover .card-content{
+  margin-top: -30px;
+  transition: 0.5s;
+} 
+.card-cover {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  margin-top: -60px;
+  z-index: 3;
+  box-shadow: 0 5px 10px rgb(20, 15, 15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-cover img{
+  width: 200px;
+  height: 200px;
+}
+ .cover1{
+background-color: #90ee90;
+}
+.cover2{
+background-color: #ffa07a;
+}
+.cover3{
+  background-color: #87cefa;
+}
+.card-content{
+  height: 200px;
+  width: 100%;
+  justify-content: flex-end;
+  flex-direction: column;
+  margin-top: -200px;
+  position: relative;
+  overflow: hidden;
+  transition: margin-top 0.3s ease-out;
+}
+.card-content h3{
+  margin: 70px 20px;
+  font-size: 25px;
+}
+.card-content p{
+  margin-top: -45px;
+  font-size: 16px;
+}
+/* akhir education */
+/* contact */
+.contact{
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: -100px;
+}
+.contact .content{
+  max-width: 800px;
+  text-align: center;
+}
+.contact .content h1{
+  font-weight: 600;
+  font-size: 36px;
+  font-family: georgia;
+}
+.container{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.container .contacinfo{
+  width:50%;
+  display: flex;
+  flex-direction: column;
+}
+.container .contacinfo .box{
+  position: relative;
+  padding:20px 0;
+  display: flex;
+}
+.container .contacinfo .box .icon{
+  min-width: 60px;
+  height: 60px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+  z-index: 3;
+}
+.container .contacinfo .box .text{
+  display: flex;
+  margin-left: 20px;
+font-size: 16px;
+color:#32adbb;
+flex-direction: column;
+font-weight: 300;
+}
+.container .contacinfo .box .text h3{
+  font-weight: 500;
+  color: #168e9e;
+}
+.contactform{
+  width: 40%;
+  padding: 40px;
+  background: white;
+}
+.contactform h2{
+  font-size: 30px;
+  color: #333;
+  font-weight: 500;
+}
+.contactform .inputbox{
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+.contactform .inputbox input,
+.contactform .inputbox textarea
+{
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16;
+  margin: 10px 0;
+  border:none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+.contactform .inputbox span{
+  position: absolute;
+  left: 0;
+  margin-top: -10px;
+}
+.contactform .inputbox input[type="submit"]{
+  width: 100px;
+  background-color: #168e9e;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
+/* akhir contact */
+/* footer */
+footer {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 80px;
+  margin-bottom: 10px;
+}
+/* akhir footer */
